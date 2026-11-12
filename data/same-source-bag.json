@@ -1,0 +1,54 @@
+{
+  "schema": [
+    {
+      "id": "k",
+      "type": "string",
+      "required": true
+    },
+    {
+      "id": "energy",
+      "type": "decimal",
+      "scale": 2,
+      "required": false
+    },
+    {
+      "id": "at",
+      "type": "timestamp",
+      "required": true
+    }
+  ],
+  "key_fields": [
+    "k"
+  ],
+  "boundaries": [
+    {
+      "sentinel": "min"
+    },
+    [
+      "b"
+    ],
+    [
+      "z"
+    ],
+    {
+      "sentinel": "max"
+    }
+  ],
+  "left": {
+    "path": "left.jsonl",
+    "bytes": 129,
+    "sha256": "e97f8e99848c9f21e968cbcfd867377ba938cd0ff92e89a2486027fa4b8996a9",
+    "rows": 4
+  },
+  "right": {
+    "path": "left.jsonl",
+    "bytes": 129,
+    "sha256": "e97f8e99848c9f21e968cbcfd867377ba938cd0ff92e89a2486027fa4b8996a9",
+    "rows": 4
+  },
+  "memory_bytes": 2048,
+  "max_open_files": 4,
+  "encoding_version": "bag-v1",
+  "snapshot_left": "L1",
+  "snapshot_right": "R1"
+}
